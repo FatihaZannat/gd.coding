@@ -114,9 +114,7 @@ header nav ul li a{
     line-height: 200%;
     margin: 30px 0;
 }
-.achivment-cards{
-    
-}
+
 .achivment-card{
     background: var(--light);
     color: var(--dark);
@@ -125,32 +123,38 @@ header nav ul li a{
     text-align: center;
     border-radius: 24px;
     position: absolute;
+   
 }
 
+
 .student-enroll .content h1{
+    margin-top: 3px;
     font-size: 36px;
     font-weight: bold;
    margin-bottom: 0px;
-   padding-top: 10px;
 }
 .student-enroll .content p{
     font-size: 16px;
    margin-top: 0px;
-   padding-bottom: 20px;
 }
-.achivment-card.student-enroll{
-    z-index: 10;
+.student-enroll{
+    
     left: 45%;
     top: 330px;
+    position: absolute;
 }
 
 .rating { 
     left: 40%;
     top: 550px;
     margin-top: 0;
+    position: absolute;
+    
 }
-.rating .content{
-    z-index: 2;
+.content{
+    position: absolute;
+    z-index: 10;
+    
 }
 .rating .content div{
     display: flex;
@@ -163,7 +167,7 @@ header nav ul li a{
 .rating .content h1{
     font-size: 36px;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: -10px;
 }
 .rating .content img{
 margin-bottom: 24px;
@@ -182,7 +186,7 @@ margin-bottom: 24px;
     border-radius: 24px;
     top: 8px;
     left: 8px;
-    /* z-index: -1; */
+    z-index: 1;
 }
 .student-enroll .bg{
     position: absolute;
@@ -192,6 +196,7 @@ margin-bottom: 24px;
     border-radius: 24px;
     top: 8px;
     left: 8px;
+    z-index: 1;
 }
 
 .right-hero-section img{
@@ -220,6 +225,8 @@ margin-bottom: 24px;
    }
 
    .testimonial-card{
+    /* display: flex; */
+    position: relative;
     width: 442px;
     height: 222px;
     box-shadow: 0 5px 5px 0.22 gray;
@@ -228,7 +235,8 @@ margin-bottom: 24px;
     margin-top: 40px;
    }
    .testimonial-card .content{
-    text-align: center;
+    /* text-align: center; */
+    width: 442px;
    padding: 24px 32px;
     border-radius: 24px;
   
@@ -242,7 +250,9 @@ margin-bottom: 24px;
 
 
    .testimonial-card .info{
+    position: absolute;
+    top: 30%;
+    left: 90px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+
    }
