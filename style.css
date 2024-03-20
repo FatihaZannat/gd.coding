@@ -22,6 +22,10 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+.wrapper{
+    width: 1366px;
+    margin: auto;
+}
 .btn {
     padding: 16px 32px;
     font-weight: bold;
@@ -39,12 +43,152 @@ body {
     background: var(--orange-color);
     color: var(--dark);
 }
-.btn.enroll-icon{
-    /* padding: 5px; */
-}
-.btn.enroll-icon img{
-    position: absolute;
-    top: 18px;
-    left: 10px; 
+
+.btn.enroll-icon {
    
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+}
+
+/* header section */
+header{
+    background-image: url(./images/Rectangle\ 9.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    color: var(--light);
+    padding-top: 30px;
+    position: fixed;
+    width: 1366px;
+   z-index: 1;
+}
+header nav .logo{
+    font-weight: 900;
+    font-size: 40px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 60px;
+}
+header nav ul li{
+ 
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light);
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.left-hero-section {
+    width: 457px;
+    
+}
+.left-hero-section h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.left-hero-section p{
+    font-size: 16px;
+    line-height: 200%;
+    margin: 30px 0;
+}
+.achivment-cards{
+    
+}
+.achivment-card{
+    background: var(--light);
+    color: var(--dark);
+    width: 206px;
+    height: 95px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.student-enroll .content h1{
+    font-size: 36px;
+    font-weight: bold;
+   margin-bottom: 0px;
+   padding-top: 10px;
+}
+.student-enroll .content p{
+    font-size: 16px;
+   margin-top: 0px;
+   padding-bottom: 20px;
+}
+.student-enroll{
+    position: relative;
+    z-index: 10;
+}
+
+.rating{ 
+    position: relative;
+    margin-top: 0;
+   z-index: 10;
+}
+.rating .content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.rating .content h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.rating .content img{
+margin-bottom: 24px;
+}
+.rating .content p{
+    font-size: 16px;
+    margin-top:-25px;
+    padding-bottom: 20px;
+}
+
+.rating .bg{
+    position: absolute;
+    width: 213px;
+    height: 100px;
+    background-color: #057ADA;
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: -1;
+}
+.student-enroll .bg{
+    position: absolute;
+    width: 213px;
+    height: 100px;
+    background-color: #057ADA;
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+}
+.right-hero-section img{
+    height: 522px;
+    transform: translateY(91px);
 }
