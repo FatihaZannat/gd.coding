@@ -124,6 +124,7 @@ header nav ul li a{
     height: 95px;
     text-align: center;
     border-radius: 24px;
+    position: absolute;
 }
 
 .student-enroll .content h1{
@@ -137,15 +138,19 @@ header nav ul li a{
    margin-top: 0px;
    padding-bottom: 20px;
 }
-.student-enroll{
-    position: relative;
+.achivment-card.student-enroll{
     z-index: 10;
+    left: 45%;
+    top: 330px;
 }
 
-.rating{ 
-    position: relative;
+.rating { 
+    left: 40%;
+    top: 550px;
     margin-top: 0;
-   z-index: 10;
+}
+.rating .content{
+    z-index: 2;
 }
 .rating .content div{
     display: flex;
@@ -177,7 +182,7 @@ margin-bottom: 24px;
     border-radius: 24px;
     top: 8px;
     left: 8px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .student-enroll .bg{
     position: absolute;
@@ -188,7 +193,56 @@ margin-bottom: 24px;
     top: 8px;
     left: 8px;
 }
+
 .right-hero-section img{
     height: 522px;
     transform: translateY(91px);
+   margin-left: 500px;
+
 }
+
+   /* testimonial section */
+
+  
+   .testimonials-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:  "Raleway", sans-serif;;
+    margin-top: 40px;
+   }
+   .right-testimonials{
+    width: 560px;
+   }
+   .right-testimonials h1{
+    font-size: 60px;
+    font-weight: bold;
+   }
+
+   .testimonial-card{
+    width: 442px;
+    height: 222px;
+    box-shadow: 0 5px 5px 0.22 gray;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 24px;
+    margin-top: 40px;
+   }
+   .testimonial-card .content{
+    text-align: center;
+   padding: 24px 32px;
+    border-radius: 24px;
+  
+   }
+   .testimonial-card .content.bg-blue{
+      background: var(--blue-color);
+   }
+   .testimonial-card .content.bg-orange{
+      background: var(--orange-color);
+   }
+
+
+   .testimonial-card .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
