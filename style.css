@@ -1,17 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Raleway:wght@100..900&display=swap');
 
-/* font-family: "Raleway", sans-serif; */
-/* font-family: "Poppins", sans-serif; */
+/* font-family: */
+/* font-family:  */
 
-:root{
+:root {
     --orange-color: #DA722C;
-    --dark-blue : #023047;
-    --blue-color : #057ADA;
-    --light-blue : #6F7DFB;
-    --dark : #070917;
-    --light : #E8F7FB;
+    --dark-blue: #023047;
+    --blue-color: #057ADA;
+    --light-blue: #6F7DFB;
+    --dark: #070917;
+    --light: #E8F7FB;
+    --raleway: "Raleway", sans-serif;
+    --popins: "Poppins", sans-serif;
 }
+
 *,
 *::after,
 *::before {
@@ -22,10 +24,12 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
-.wrapper{
+
+.wrapper {
     width: 1366px;
     margin: auto;
 }
+
 .btn {
     padding: 16px 32px;
     font-weight: bold;
@@ -35,24 +39,26 @@ body {
     display: inline-block;
     position: relative;
 }
-.btn.dark-btn{
+
+.btn.dark-btn {
     background: var(--dark);
     color: var(--light);
 }
-.btn.light-btn{
+
+.btn.light-btn {
     background: var(--orange-color);
     color: var(--dark);
 }
 
 .btn.enroll-icon {
-   
-   display: inline-flex;
-   align-items: center;
-   gap: 10px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* header section */
-header{
+header {
     background-image: url(./images/Rectangle\ 9.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +66,7 @@ header{
     width: 100%;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
@@ -68,22 +74,24 @@ header nav{
     padding-top: 30px;
     position: fixed;
     width: 1366px;
-   z-index: 1;
+    z-index: 1;
 }
-header nav .logo{
+
+header nav .logo {
     font-weight: 900;
     font-size: 40px;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     list-style: none;
     align-items: center;
     gap: 60px;
 }
-header nav ul li{
- 
-}
-header nav ul li a{
+
+header nav ul li {}
+
+header nav ul li a {
     text-decoration: none;
     color: var(--light);
     font-weight: bold;
@@ -92,7 +100,7 @@ header nav ul li a{
 
 /* hero section */
 
-.hero-section{
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,19 +111,21 @@ header nav ul li a{
 
 .left-hero-section {
     width: 457px;
-    
+
 }
-.left-hero-section h1{
+
+.left-hero-section h1 {
     font-weight: bolder;
     font-size: 50px;
 }
-.left-hero-section p{
+
+.left-hero-section p {
     font-size: 16px;
     line-height: 200%;
     margin: 30px 0;
 }
 
-.achivment-card{
+.achivment-card .content {
     background: var(--light);
     color: var(--dark);
     width: 206px;
@@ -123,40 +133,45 @@ header nav ul li a{
     text-align: center;
     border-radius: 24px;
     position: absolute;
-   
+    z-index: 10;
+
 }
 
 
-.student-enroll .content h1{
+.student-enroll .content h1 {
     margin-top: 3px;
     font-size: 36px;
     font-weight: bold;
-   margin-bottom: 0px;
+    margin-bottom: 0px;
 }
-.student-enroll .content p{
+
+.student-enroll .content p {
     font-size: 16px;
-   margin-top: 0px;
+    margin-top: 0px;
 }
-.student-enroll{
-    
+
+.student-enroll {
+
     left: 45%;
     top: 330px;
     position: absolute;
 }
 
-.rating { 
+.rating {
     left: 40%;
     top: 550px;
     margin-top: 0;
     position: absolute;
-    
+
 }
-.content{
+
+/* .content{
+    background: var(--light);
     position: absolute;
     z-index: 10;
-    
-}
-.rating .content div{
+     
+}*/
+.rating .content div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,21 +179,23 @@ header nav ul li a{
     padding-top: 10px;
 }
 
-.rating .content h1{
+.rating .content h1 {
     font-size: 36px;
     font-weight: bold;
     margin-top: -10px;
 }
-.rating .content img{
-margin-bottom: 24px;
+
+.rating .content img {
+    margin-bottom: 24px;
 }
-.rating .content p{
+
+.rating .content p {
     font-size: 16px;
-    margin-top:-25px;
+    margin-top: -25px;
     padding-bottom: 20px;
 }
 
-.rating .bg{
+.rating .bg {
     position: absolute;
     width: 213px;
     height: 100px;
@@ -186,9 +203,10 @@ margin-bottom: 24px;
     border-radius: 24px;
     top: 8px;
     left: 8px;
-    z-index: 1;
+    /* z-index: -1; */
 }
-.student-enroll .bg{
+
+.student-enroll .bg {
     position: absolute;
     width: 213px;
     height: 100px;
@@ -199,60 +217,159 @@ margin-bottom: 24px;
     z-index: 1;
 }
 
-.right-hero-section img{
+.right-hero-section img {
     height: 522px;
     transform: translateY(91px);
-   margin-left: 500px;
+    margin-left: 500px;
 
 }
 
-   /* testimonial section */
+/* testimonial section */
 
-  
-   .testimonials-section{
+
+.testimonials-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:  "Raleway", sans-serif;;
+    font-family: "Raleway", sans-serif;
+    ;
     margin-top: 40px;
-   }
-   .right-testimonials{
+}
+
+.right-testimonials {
     width: 560px;
-   }
-   .right-testimonials h1{
+}
+
+.right-testimonials h1 {
     font-size: 60px;
     font-weight: bold;
-   }
+}
 
-   .testimonial-card{
+.testimonial-card {
     /* display: flex; */
     position: relative;
     width: 442px;
     height: 222px;
     box-shadow: 0 5px 5px 0.22 gray;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 24px;
     margin-top: 40px;
-   }
-   .testimonial-card .content{
+}
+
+.testimonial-card .content {
     /* text-align: center; */
     width: 442px;
-   padding: 24px 32px;
+    padding: 24px 32px;
     border-radius: 24px;
-  
-   }
-   .testimonial-card .content.bg-blue{
-      background: var(--blue-color);
-   }
-   .testimonial-card .content.bg-orange{
-      background: var(--orange-color);
-   }
+
+}
+
+.testimonial-card .content.bg-blue {
+    background: var(--blue-color);
+}
+
+.testimonial-card .content.bg-orange {
+    background: var(--orange-color);
+}
 
 
-   .testimonial-card .info{
+.testimonial-card .info {
     position: absolute;
     top: 30%;
     left: 90px;
     display: flex;
 
-   }
+}
+
+
+
+
+/* courses secton */
+.courses-section {
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308c 100%);
+    margin: 70px 0px;
+    padding: 70px 0px;
+}
+
+.light-heading {
+    text-align: center;
+    padding: 70px 0px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--light);
+
+}
+
+.course-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+
+}
+
+.course-card {
+    /* width: 530px;
+    height: 418px; */
+    background: var(--light);
+    border-radius: 24px;
+    padding: 0 32px;
+    margin: 40x 0;
+
+}
+.course-cards .course-card::after{
+    content: "";
+  background: var(--dark-blue);
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+    width: 442px;
+    
+}
+
+.course-card .info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-card img {
+    width: 100%;
+    margin: -5px;
+}
+
+.course-card .info h1 {
+    font-family: var(--raleway);
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--dark-blue);
+}
+
+.course-card .info .duration {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+.course-card .info .duration img {
+    width: 16px;
+}
+
+.course-card .info .duration span {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.courses-section .wrapper {
+
+    position: relative;
+}
+
+.courses-section .btn{
+    position: absolute;
+    right: 0px;
+}
