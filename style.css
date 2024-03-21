@@ -226,6 +226,9 @@ header nav ul li a {
 
 /* testimonial section */
 
+.left-testimonials .testimonial-card:last-child{
+    transform: translateX(30px);
+}
 
 .testimonials-section {
     display: flex;
@@ -234,6 +237,8 @@ header nav ul li a {
     font-family: "Raleway", sans-serif;
     ;
     margin-top: 40px;
+    position: relative;
+
 }
 
 .right-testimonials {
@@ -246,7 +251,6 @@ header nav ul li a {
 }
 
 .testimonial-card {
-    /* display: flex; */
     position: relative;
     width: 442px;
     height: 222px;
@@ -254,16 +258,32 @@ header nav ul li a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 24px;
     margin-top: 40px;
-}
+    
+    background-color: white;
+    /* z-index: -1; */
+ }
+
 
 .testimonial-card .content {
-    /* text-align: center; */
+    text-align: center;
     width: 442px;
     padding: 24px 32px;
     border-radius: 24px;
+} 
 
+.left-testimonials::after{
+    content: "";
+    height: 550px;
+    width: 28px;
+    border-radius: 24px;
+    background-color: var(--dark-blue);
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    z-index: -1;
+   
+    
 }
-
 .testimonial-card .content.bg-blue {
     background: var(--blue-color);
 }
@@ -274,10 +294,9 @@ header nav ul li a {
 
 
 .testimonial-card .info {
-    position: absolute;
-    top: 30%;
-    left: 90px;
     display: flex;
+    justify-content: space-around;
+    position: relative;
 
 }
 
