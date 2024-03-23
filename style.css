@@ -58,15 +58,19 @@ body {
 }
 
 /* header section */
+header nav.mobile-nav{
+    display: none;
+}
 header {
-    background-image: url(./images/Rectangle\ 9.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(./images/Rectangle\ 9.svg); */
+    background:linear-gradient(180deg, #6F7DFB 0%, #26308c 100%);
     height: 100vh;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-header nav {
+header nav.desktop-nav {
     display: flex;
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
@@ -75,13 +79,24 @@ header nav {
     position: fixed;
     width: 1366px;
     z-index: 1;
+    transition: all 500ms ease;
 }
 
-header nav .logo {
+
+header nav .logo a{
     font-weight: 900;
     font-size: 40px;
+    text-decoration: none;
+    color: var(--light);
+    display: inline-block;
+    margin-top: 20px;
 }
 
+nav.scroll{
+    background-color: var(--dark);
+    border-radius: 24px;
+    padding: 12px;
+}
 header nav ul {
     display: flex;
     list-style: none;
@@ -487,4 +502,179 @@ footer .copyright{
     font-size: 16px;
     padding: 70px 0px;
     margin: 0;
+}
+
+
+/* tablate media */
+@media(max-width: 1100px){
+    header nav.mobile-nav{
+        display: none;
+    }
+.btn{
+    padding: 12px 32px;
+    font-size: 16px;
+}
+.wrapper {
+    padding: 0px 100px;
+    width: 834px;
+ } 
+ header nav.desktop-nav{
+    width: 100%;
+ }
+header nav{
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0px 60px;
+}
+
+
+.hero-section {
+    display: block;
+    
+}
+.left-hero-section{
+    margin-top: 155px;
+}
+.achivment-card.student-enroll{
+    top: 700px;
+    left: 120px;
+}
+.achivment-card.rating{
+    top: 900px;
+    left: 140px;
+}
+
+.right-hero-section{
+    transform: translateY(-149px);
+}
+
+
+.testimonials-section .wrapper{
+    /* margin: 0px;
+    width: 100%; */
+}
+.testimonials-section{
+   /* display: block; */
+   flex-direction: column-reverse;
+   align-items: center;
+}
+.left-testimonials {
+margin-top: 20px;
+}
+.left-testimonials .testimonial-card:last-child{
+    transform: translateX(0px);
+}
+
+.left-testimonials::after{
+     top: 400px;
+    /* left: 400px; */
+} 
+.testimonial-card{
+    margin-left: -110px;
+}
+
+.course-cards{
+   flex-direction: column;
+}
+
+
+.links-containers{
+    grid-template-columns: 2fr 2fr;
+}
+
+}
+
+/* mobail section */
+@media(max-width:800px) {
+   
+    .wrapper{
+        max-width: 414px;
+        padding: 30px 0px;
+        margin: 0px auto;
+    }
+   header nav.desktop-nav {
+    display: none;
+
+    }
+    header nav{
+        padding: 0px;
+    }
+    header nav.mobile-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-top: 30px; */
+    }
+   .mobile-nav.scroll{
+        background-color: var(--light-blue);
+        box-shadow: 0 9px 12px -5px rgba(0, 0, 0, 0.23);
+        padding: 8px 100px;
+        /* width: 100%; */
+        border-radius: 0;
+    } 
+
+
+    /* hero section */
+
+    .left-hero-section{
+        margin-top: 60px;
+    }
+    .achivment-card.student-enroll{
+        left: 140px;
+    }
+    .achivment-card.rating{
+        left: 140px;
+    }
+    .right-hero-section img{
+        width: 300px;
+        height: auto;
+        transform: translateY(212px);
+        margin-left: 200px;
+    }
+    .courses-section{
+        padding: 0;
+    }
+    .courses-section .btn{
+        margin-bottom: 30px;
+    }
+    .light-heading{
+        padding: 30px 0 60px 0;
+    }
+    /* app section */
+    .app-section .app-btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-section p{
+        /* max-width: 340px; */
+        margin: auto;
+    }
+
+
+    /* footer section */
+    .links-containers{
+        grid-template-columns: auto;
+        justify-content: center;
+
+    }
+    .links-containers div{
+        text-align: center;
+    }
+    .links-containers .contact .social{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    form .submit-btn{
+        position: static;
+        margin: 20px;
+        padding: 6px 28px;
+        border: none;
+    }
+    footer .copyright {
+        padding: 20px 0 70px 0;
+    }
+    form input {
+        max-width: 350px;
+    }
 }
