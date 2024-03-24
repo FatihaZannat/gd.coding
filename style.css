@@ -58,16 +58,14 @@ body {
 }
 
 /* header section */
-header nav.mobile-nav{
+header nav.mobile-nav {
     display: none;
 }
+
 header {
-    /* background-image: url(./images/Rectangle\ 9.svg); */
-    background:linear-gradient(180deg, #6F7DFB 0%, #26308c 100%);
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308c 100%);
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header nav.desktop-nav {
@@ -75,15 +73,16 @@ header nav.desktop-nav {
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
     color: var(--light);
-    padding-top: 30px;
+    padding: 30px;
     position: fixed;
+
     width: 1366px;
-    z-index: 1;
+    z-index: 11;
     transition: all 500ms ease;
 }
 
 
-header nav .logo a{
+header nav .logo a {
     font-weight: 900;
     font-size: 40px;
     text-decoration: none;
@@ -92,11 +91,12 @@ header nav .logo a{
     margin-top: 20px;
 }
 
-nav.scroll{
+nav.scroll {
     background-color: var(--dark);
     border-radius: 24px;
     padding: 12px;
 }
+
 header nav ul {
     display: flex;
     list-style: none;
@@ -241,7 +241,7 @@ header nav ul li a {
 
 /* testimonial section */
 
-.left-testimonials .testimonial-card:last-child{
+.left-testimonials .testimonial-card:last-child {
     transform: translateX(30px);
 }
 
@@ -273,20 +273,20 @@ header nav ul li a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 24px;
     margin-top: 40px;
-    
+
     background-color: white;
     /* z-index: -1; */
- }
+}
 
 
 .testimonial-card .content {
     text-align: center;
-    width: 442px;
+    /* width: 442px; */
     padding: 24px 32px;
     border-radius: 24px;
-} 
+}
 
-.left-testimonials::after{
+.left-testimonials::after {
     content: "";
     height: 550px;
     width: 28px;
@@ -296,9 +296,10 @@ header nav ul li a {
     top: 0px;
     left: 50px;
     z-index: -1;
-   
-    
+
+
 }
+
 .testimonial-card .content.bg-blue {
     background: var(--blue-color);
 }
@@ -353,15 +354,16 @@ header nav ul li a {
     margin: 40x 0;
 
 }
-.course-cards .course-card::after{
+
+.course-cards .course-card::after {
     content: "";
-  background: var(--dark-blue);
+    background: var(--dark-blue);
     height: 8px;
     position: absolute;
     bottom: 0;
     border-radius: 8px;
     width: 442px;
-    
+
 }
 
 .course-card .info {
@@ -405,35 +407,39 @@ header nav ul li a {
     padding-bottom: 100px;
 }
 
-.courses-section .btn{
+.courses-section .btn {
     position: absolute;
     right: 0px;
     bottom: -10px;
 }
 
 /* app section */
-.app-section{
+.app-section {
     margin: 100px auto;
     text-align: center;
 }
-.app-section h1{
+
+.app-section h1 {
     font-size: 60px;
     font-weight: bolder;
     color: var(--dark-blue);
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.app-section p{
+
+.app-section p {
     /* margin-top: 0; */
     color: var(--dark-blue);
 }
-.app-section .app-btns{
+
+.app-section .app-btns {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 45px;
 }
-.app-section .app-btns .app-btn{
+
+.app-section .app-btns .app-btn {
     display: flex;
     background: var(--dark);
     padding: 20px;
@@ -442,52 +448,60 @@ header nav ul li a {
     justify-content: center;
     width: 310px;
 }
-.app-btn span{
+
+.app-btn span {
     color: var(--light);
     font-size: 24px;
 }
 
 /* footer section */
 
-footer{
+footer {
     background: var(--dark);
 }
-.links-containers{
-display: grid;
-grid-template-columns: 2fr 2fr 3fr;
+
+.links-containers {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
 }
-.links-containers h3{
+
+.links-containers h3 {
     color: var(--orange-color);
 }
-.links-containers a{
+
+.links-containers a {
     color: var(--light);
     text-decoration: none;
     font-size: 14px;
 }
-.links-containers ul{
+
+.links-containers ul {
     list-style: none;
     padding-left: 20px;
 }
-.links-containers ul li{
+
+.links-containers ul li {
     margin: 9px 0;
 }
 
-.links-containers .contact .social{
+.links-containers .contact .social {
     display: flex;
     gap: 28px;
 }
 
-form input{
- width: 520px;
- height: 40px;
- border-radius: 8px;   
- padding: 20px;
+form input {
+    width: 520px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 20px;
 }
-form{
+
+form {
     margin-top: 20px;
- position: relative;
+    position: relative;
 }
-form .submit-btn{
+
+form .submit-btn {
     padding: 4px 28px;
     border-radius: 8px;
     position: absolute;
@@ -497,7 +511,7 @@ form .submit-btn{
     color: var(--light);
 }
 
-footer .copyright{
+footer .copyright {
     color: var(--light);
     font-size: 16px;
     padding: 70px 0px;
@@ -506,175 +520,261 @@ footer .copyright{
 
 
 /* tablate media */
-@media(max-width: 1100px){
-    header nav.mobile-nav{
+@media(max-width: 1100px) {
+    header nav.mobile-nav {
         display: none;
     }
-.btn{
-    padding: 12px 32px;
-    font-size: 16px;
-}
-.wrapper {
-    padding: 0px 100px;
-    width: 834px;
- } 
- header nav.desktop-nav{
+
+    header nav.desktop-nav {
+        width: 834px;
+    }
+
+    .btn {
+        padding: 12px 32px;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        /* padding: 0px 100px; */
+        width: 834px;
+    }
+
+    /* header nav.desktop-nav{
     width: 100%;
- }
-header nav{
-    width: 100%;
-    left: 0;
-    right: 0;
-    padding: 0px 60px;
-}
+ } */
+
+    header nav ul {
+        gap: 40px;
+    }
+
+    .hero-section {
+        display: block;
+
+    }
+
+    .left-hero-section {
+        margin-top: 155px;
+    }
+
+    .achivment-card.student-enroll {
+        top: 700px;
+        left: 120px;
+    }
+
+    .achivment-card.rating {
+        top: 900px;
+        left: 140px;
+    }
+
+    .right-hero-section {
+        transform: translateY(-149px);
+    }
 
 
-.hero-section {
-    display: block;
-    
-}
-.left-hero-section{
-    margin-top: 155px;
-}
-.achivment-card.student-enroll{
-    top: 700px;
-    left: 120px;
-}
-.achivment-card.rating{
-    top: 900px;
-    left: 140px;
-}
-
-.right-hero-section{
-    transform: translateY(-149px);
-}
-
-
-.testimonials-section .wrapper{
-    /* margin: 0px;
+    .testimonials-section .wrapper {
+        /* margin: 0px;
     width: 100%; */
-}
-.testimonials-section{
-   /* display: block; */
-   flex-direction: column-reverse;
-   align-items: center;
-}
-.left-testimonials {
-margin-top: 20px;
-}
-.left-testimonials .testimonial-card:last-child{
-    transform: translateX(0px);
-}
+    }
 
-.left-testimonials::after{
-     top: 400px;
-    /* left: 400px; */
-} 
-.testimonial-card{
-    margin-left: -110px;
-}
+    .testimonials-section {
+        /* display: block; */
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-.course-cards{
-   flex-direction: column;
-}
+    .testimonial-card {
+        width: 630px;
+        height: 195px;
+    }
 
+    .left-testimonials {
+        margin-top: 20px;
+    }
 
-.links-containers{
-    grid-template-columns: 2fr 2fr;
-}
+    .left-testimonials .testimonial-card:last-child {
+        transform: translateX(0px);
+    }
+
+    .left-testimonials::after {
+        top: 400px;
+        /* left: 400px; */
+    }
+
+    .testimonial-card {
+        margin-left: -110px;
+    }
+
+    .course-cards {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 630px;
+    }
+
+    .links-containers {
+        grid-template-columns: 2fr 2fr;
+    }
 
 }
 
 /* mobail section */
 @media(max-width:800px) {
-   
-    .wrapper{
-        max-width: 414px;
+
+    .wrapper {
+        width: 414px;
         padding: 30px 0px;
         margin: 0px auto;
     }
-   header nav.desktop-nav {
-    display: none;
 
+    header nav.desktop-nav {
+        display: none;
     }
-    header nav{
-        padding: 0px;
-    }
-    header nav.mobile-nav{
+
+    /*mobile menu  */
+    .mobile-menu-container {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background-color: var(--dark);
+        height: 100vh;
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* margin-top: 30px; */
-    }
-   .mobile-nav.scroll{
-        background-color: var(--light-blue);
-        box-shadow: 0 9px 12px -5px rgba(0, 0, 0, 0.23);
-        padding: 8px 100px;
-        /* width: 100%; */
-        border-radius: 0;
-    } 
-
-
-    /* hero section */
-
-    .left-hero-section{
-        margin-top: 60px;
-    }
-    .achivment-card.student-enroll{
-        left: 140px;
-    }
-    .achivment-card.rating{
-        left: 140px;
-    }
-    .right-hero-section img{
-        width: 300px;
-        height: auto;
-        transform: translateY(212px);
-        margin-left: 200px;
-    }
-    .courses-section{
-        padding: 0;
-    }
-    .courses-section .btn{
-        margin-bottom: 30px;
-    }
-    .light-heading{
-        padding: 30px 0 60px 0;
-    }
-    /* app section */
-    .app-section .app-btns{
-        flex-direction: column;
-        align-items: center;
-    }
-    .app-section p{
-        /* max-width: 340px; */
-        margin: auto;
-    }
-
-
-    /* footer section */
-    .links-containers{
-        grid-template-columns: auto;
         justify-content: center;
+        align-items: center;
+        z-index: 100;
+        transition: all 400ms ease;
+    }
 
+    .mobile-menu-container.active{
+        left: 0;
     }
-    .links-containers div{
-        text-align: center;
+
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        right: 160px;
+        top: 32px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 400ms ease;
     }
-    .links-containers .contact .social{
-        justify-content: center;
-        margin-top: 20px;
+    .mobile-menu-container.active .close-icon{
+        opacity: 1;
+        pointer-events: auto;
     }
-    form .submit-btn{
-        position: static;
-        margin: 20px;
-        padding: 6px 28px;
-        border: none;
-    }
-    footer .copyright {
-        padding: 20px 0 70px 0;
-    }
-    form input {
-        max-width: 350px;
-    }
+
+  .mobile-menu-container ul{
+    list-style: none;
+  }
+
+.mobile-menu-container ul li {
+    margin: 30px 0;
+    text-align: center;
+
+}
+
+.mobile-menu-container  a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 18px;
+}
+
+ header nav.mobile-nav {
+    display: flex;
+    width: 414px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    color: var(--light);
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+    transition: all 500ms ease;
+}
+
+nav.scroll {
+    background-color: var(--light-blue);
+    box-shadow: 0 9px 12px -5px rgba(0, 0, 0, 0.23);
+    padding: 8px 10px;
+    /* width: 100%; */
+    border-radius: 0;
+}
+
+
+/* hero section */
+
+.left-hero-section {
+    margin-top: 60px;
+}
+
+.achivment-card.student-enroll {
+    left: 140px;
+}
+
+.achivment-card.rating {
+    left: 140px;
+}
+
+.right-hero-section img {
+    width: 300px;
+    height: auto;
+    transform: translateY(212px);
+    margin-left: 200px;
+}
+
+.courses-section {
+    padding: 0;
+}
+
+.courses-section .btn {
+    margin-bottom: 30px;
+}
+
+.light-heading {
+    padding: 30px 0 60px 0;
+}
+
+/* app section */
+.app-section .app-btns {
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-section p {
+    /* max-width: 340px; */
+    margin: auto;
+}
+
+
+/* footer section */
+.links-containers {
+    grid-template-columns: auto;
+    justify-content: center;
+
+}
+
+.links-containers div {
+    text-align: center;
+}
+
+.links-containers .contact .social {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form .submit-btn {
+    position: static;
+    margin: 20px;
+    padding: 6px 28px;
+    border: none;
+}
+
+footer .copyright {
+    padding: 20px 0 70px 0;
+}
+
+form input {
+    max-width: 350px;
+}
 }
