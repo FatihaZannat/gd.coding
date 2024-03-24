@@ -90,6 +90,9 @@ header nav .logo a {
     display: inline-block;
     margin-top: 20px;
 }
+.mobile-menu-container{
+    display: none;
+}
 
 nav.scroll {
     background-color: var(--dark);
